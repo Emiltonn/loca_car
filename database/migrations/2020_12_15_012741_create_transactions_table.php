@@ -21,7 +21,8 @@ class CreateTransactionsTable extends Migration
             $table->double('account_balance', 8, 2);
             $table->string('description', 100);
             $table->double('value', 8, 2);
-            $table->tinyInteger('type_transaction');
+            $table->boolean('type_transaction')->default(false); //false = saída/débito
+            $table->boolean('done')->default(false);
             $table->timestamps();
         });
 

@@ -15,6 +15,7 @@ class CreateCarsTable extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
+            $table->boolean('leased')->default(false);
             $table->string('brand', 100);
             $table->string('model', 100);
             $table->string('plate', 50);

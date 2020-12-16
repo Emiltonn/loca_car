@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AccountControler;
 use App\Http\Controllers\TransactionControler;
+use App\Http\Controllers\CarControler;
+use App\Http\Controllers\ClientControler;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +23,5 @@ Route::get('/', function () {
 
 Route::resource('account', AccountController::class);
 Route::resource('transaction', TransactionController::class);
+Route::resource('car', CarController::class);
+Route::resource('client', ClientController::class);
