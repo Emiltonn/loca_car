@@ -25,6 +25,7 @@ Route::resource('account', AccountController::class);
 Route::resource('transaction', TransactionController::class);
 Route::resource('car', CarController::class);
 Route::resource('client', ClientController::class);
+Route::view('dashboard', 'layouts.master');
 
 Auth::routes();
 
