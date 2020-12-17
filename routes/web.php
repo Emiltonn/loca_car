@@ -25,3 +25,7 @@ Route::resource('account', AccountController::class);
 Route::resource('transaction', TransactionController::class);
 Route::resource('car', CarController::class);
 Route::resource('client', ClientController::class);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
